@@ -48,26 +48,29 @@
 				<div class="key"><input type="password" value="password" id="password" onfocus="this.value = '';"></div>
 			</form>
 
+			
+
+
+			<div class="signin"><input type="submit" value="entrar" id="submit" onclick="logar(); return false"></div>
+			
 			<script>
 
 
-			function logar(){
-
-				var login = document.getElementById('username').value;
-				var senha = document.getElementById('password').value;
-
-				if(login == "Renata" && senha == "26082023"){
-					location.href = "final.html";
-				}else{
-					alert('errou o usuário ou senha kkkk');
+				function logar(){
+	
+					var login = document.getElementById('username').value;
+					var senha = document.getElementById('password').value;
+	
+					if(login == "Renata" && senha == "26082023"){
+						location.href = "final.html";
+					}else{
+						alert('errou o usuário ou senha kkkk');
+					}
+	
 				}
+	
+				</script>
 
-			}
-
-    		</script>
-
-
-			<div class="signin"><input type="submit" value="entrar" id="submit" onclick="validate()" ></div>
 		</div>
  		<div class="copy-rights"><p></a> </p></div>
 	</body>
