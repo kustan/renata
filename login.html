@@ -26,13 +26,7 @@
         <meta property="fb:admins" content="100000462238479" />
 
 
-        <!-- Sweet Alert -->
-        <script src="login/js/sweetalert.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="login/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="login/css/sweetalert.css">
-        <link rel="stylesheet" type="text/css" href="login/css/bootstrap.min.css">
-
+        
 		<!-- Webfonts -->
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
@@ -68,7 +62,26 @@
 				<input type="text" class="text" value="Nome" id="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nome';}" >
 				<div class="key"><input type="password" value="password" id="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"></div>
 			</form>
-			<div class="signin"><input type="submit" value="Entrar &#10084;" id="submit" onclick="validate()" ></div>
+
+			<script>
+
+
+        function logar(){
+
+            var login = document.getElementById('username').value;
+            var senha = document.getElementById('password').value;
+
+            if(login == "Renata" && senha == "26082023"){
+            
+                location.href = "me-namora\final.html";
+            }else{
+                alert('errou o usuário ou senha kkkk');
+            }
+
+        }
+
+    </script>
+			<div class="signin"><input type="submit" value="entrar" id="submit" onclick="validate()" ></div>
 		</div>
  		<div class="copy-rights"><p></a> </p></div>
 	</body>
